@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LineDrive</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/e257908efc.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../static/css/nav.css">
+    <style>
+        .footer {
+            width : 100%;
+            height : 50px;
+            background : white;
+            text-align : center;
+            padding-top : 100px;
+            font-family: 'TheJamsil';
+            font-weight: 100;
+            font-size : 10px;
+        }
+        
+        .footer .content {
+            padding-bottom : 20px;
+        }
+        
+        .footer img {
+            width : 150px;
+            height : 20px;
+        }
+
+        </style>
+</head>
+<body>
+    <nav>
+		<a href="http://localhost:8081/controller/"><img src="../static/image/Linedrive_Logo.png"></a>
+		<ul class="menu">
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+	    <ul class="log">
+	    </ul>
+	    
+	</nav>
+    <div class="container">
+        <!-- 좌측 여백 -->
+         
+        <!-- 메인공간 -->
+        <div class="item" style = "text-align: center; font-family: 'TheJamsil';">
+            <h1>타격 분석 완료!!</h1>
+            {{result}}
+            <br>
+            <button onClick="location.href='http://localhost:8081/controller/posture/result'" value = result>자세진단 결과</button>
+        </div> 
+        <!-- 우측 여백 -->
+    </div>
+    <div class="footer" >
+            <div class="content">
+                <p>copyright © 2023 LINEDRIVE Co. 대표자 : 한창현
+                <a style="margin-left : 10px;"><img src="../static/image/Linedrive_Logoline.png"></a></p>
+            </div>
+    </div>
+</body>
+</html>
